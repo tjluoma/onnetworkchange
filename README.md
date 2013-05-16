@@ -28,9 +28,13 @@ In order for this to work, you must move *two* files to the correct location.
 
 			launchctl getenv PATH
 
+	If you need to change the PATH for `launchd` add a line to the file `/etc/launchd.conf` line this:
+		
+			setenv PATH /usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
 2. Next, the **com.tjluoma.onnetworkchange.plist** file has to be moved to **~/Library/LaunchAgents/**. Once it is in place, tell `launchd` to load it:
 
-		launchctl load ~/Library/LaunchAgents/com.tjluoma.onnetworkchange.plist
+			launchctl load ~/Library/LaunchAgents/com.tjluoma.onnetworkchange.plist
 
 
 
