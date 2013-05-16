@@ -24,7 +24,7 @@ This is a `launchd` plist file which tells `launchd` to the run the `onnetworkch
 
 In order for this to work, you must move *two* files to the correct location.
 
-1. A script called **`onnetworkchange.sh`** has to be somewhere in launchd's PATH. To see what `launchd`'s path is, use 
+1. A script called `onnetworkchange.sh` has to be somewhere in launchd's PATH. To see what `launchd`'s path is, use 
 
 			launchctl getenv PATH
 
